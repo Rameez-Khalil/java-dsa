@@ -1,0 +1,14 @@
+A hashtable is a non-linear ds where we use a hash function to identify the address loc.
+We will be storing key-value pairs.
+In our case we will be storing hardwares.
+hash function will be running against KEY and each letter will then be converted into ASCII.
+
+
+************************HASH TABLE PROPS****************.
+ONE WAY - key will be converted once it is converted we cannot re-evaluate it back.
+DETERMINISTIC - whatever the value it provides us for each key will be constant throughout the course.
+
+
+**********************APPROACH****************
+SET METHOD (key, value) - Hash -> address value.
+GET METHOD (key) - returns value.

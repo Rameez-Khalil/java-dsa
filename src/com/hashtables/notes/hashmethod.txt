@@ -1,0 +1,15 @@
+hash method is going to be private as this is only going to be used by hashmethod class.
+We need to structure it in a way that the number should lie under the specified range.
+
+private int hash(String key){
+    int hash = 0;
+    //convert this key into char array so we can convert every letter into an ascii.
+    char[] charArray = key.toCharArray();
+    for(int i=0;i<charArray.length;i++){
+        //java is smart enough to understand this below statement.
+        int asciiValue = charArray[i];
+        hash = (hash + asciival*23) % datamap.length;
+
+    }
+    return hash;
+}

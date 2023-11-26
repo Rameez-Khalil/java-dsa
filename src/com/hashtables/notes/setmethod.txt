@@ -1,0 +1,11 @@
+set will be responsible to genrate a node
+should accept key and value.
+run hash function and set its value as index.
+create a node.
+check datamap[index]==null if so.
+    datamap[index] = newnode.
+else:
+    assign temp variable at the start of that index.
+    traverse until temp's next is not null.
+    once found assign temp.next = newnode.
+

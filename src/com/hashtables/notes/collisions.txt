@@ -1,0 +1,4 @@
+SEPARATE CHAINING - Adding at the same address.
+LINEAR PROBING (Open Addressing) - Find next pos and put it there.
+
+Separate chaining -  we will use linked list approach.

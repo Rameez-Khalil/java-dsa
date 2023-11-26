@@ -1,0 +1,16 @@
+The reason we will use 7 as the size is to avoid collisions.
+HashTable{
+int size = 7
+Node[] datamap;
+
+HashTable(){
+    datamap = new Node(size).
+    }
+
+    Node{
+    int value;
+    Strin key;
+    Node next;
+    Node(String key, int value){
+    //initializers.
+    }
