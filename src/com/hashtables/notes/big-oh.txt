@@ -1,0 +1,6 @@
+//hash method is o(1).
+//set method o(1).
+//get method o(1) -
+
+We enforce that our hash function will return random value and due to that we do assume it is going to be o(1) for get and set.
+

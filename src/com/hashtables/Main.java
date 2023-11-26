@@ -8,8 +8,8 @@ public class Main {
         ht.setMethod(80, "lumber");
         ht.setMethod(200, "bolts");
         ht.setMethod(140, "screws");
-        ht.printTable();
-
+        System.out.println("Get Keys");
+        System.out.println(ht.keys());
 
     }
 }

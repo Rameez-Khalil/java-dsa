@@ -1,0 +1,6 @@
+accepts key as input parameter and returns int value.
+this key will then need to be passed onto hash function.
+if there are multiple nodes present then traverse until you
+find one node with this key.
+
+

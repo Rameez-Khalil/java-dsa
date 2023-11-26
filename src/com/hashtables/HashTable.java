@@ -1,5 +1,7 @@
 package com.hashtables;
 
+import java.util.*;
+
 public class HashTable {
 
     //Size, datamap array.
@@ -72,5 +74,41 @@ public class HashTable {
         }
 
     }
+
+    //get method.
+    public int getMethod(String key) {
+        int index = hash(key);
+        Node temp = datamap[index];
+        //There are two paths for this.
+        //1. If that position contains multiple nodes.
+        //2. If that position contains null.
+
+        //Coding for when there are multiple nodes.
+        while (temp != null) {
+            if (temp.key == key) {
+                return temp.value;
+            }
+            temp = temp.next;
+        }
+        return 0;
+    }
+
+    //Keys.
+    public List<String> keys() {
+        ArrayList<String> list = new ArrayList<String>();
+        Node temp;
+        for (int i = 0; i < datamap.length; i++) {
+            temp = datamap[i];
+            while (temp != null) {
+                list.add(temp.key);
+                temp = temp.next;
+            }
+
+        }
+        return list;
+    }
+
+
+
 
 }

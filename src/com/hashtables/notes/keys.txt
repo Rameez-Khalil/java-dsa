@@ -1,0 +1,8 @@
+In this method we will fetch all the keys and store them
+in array list and at the end will return that array list.
+
+//Loop through the entire datamap.
+//start from 0 and traverse until datamap.length.
+//For each datamap[i] make sure to grab all the items.
+// for each ith value store temp.key into an arraylist.
+
