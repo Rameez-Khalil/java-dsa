@@ -1,0 +1,17 @@
+A way of comparing two sets of codes.
+Big Oh is a way of measuring efficiency of different algorithms/codes.
+
+Time Complexity: Is not measured with respect to the time.
+Space Complexity: How much memory code acquires.
+
+
+
+We need to address both concepts, and based off of the priority we need to
+sructure the code.
+
+
+Best case: if we are finding the 1st position.
+Average case : if we are finding the middle element.
+Worst case: if we are finding the last element.
+
+

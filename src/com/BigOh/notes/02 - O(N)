@@ -1,0 +1,13 @@
+Easiest one to get our head around.
+Based off of the length the code will execute.
+It will always be a straight line. (Proportional).
+
+Example:
+    Suppose you have to print the word Hello N-times.
+    The code will then need to execute N number of times.
+
+
+    This statement will execute N number of times.
+    print(i: 0->N){
+        sysout("Hello")
+    }

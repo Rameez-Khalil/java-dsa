@@ -1,0 +1,8 @@
+Consider three for loops
+two are nested and the other ran separately.
+
+for the nested: n2.
+for the single: n.
+
+total complex: n2 + n.
+we will drop n in this case.

@@ -1,0 +1,33 @@
+LogN works on the basis of divide and conquer.
+Consider an array below.
+
+
+ARR = 1,2,3,4,5,6,7,8.
+
+If we want to find out the '1' then we will divide the parent array by 2.
+
+now the array becomes
+arr1 = 1,2,3,4 ;  arr2 = 5,6,7,8. step#1.
+
+divide further - step#2.
+arr1:
+    arr1A = 1,2
+    arr1B = 3,4.
+
+arr2:
+    arr2a = 5,6
+    arr2b = 7,8.
+
+Now that we have arr1A containing arr1 - step#3.
+
+
+total length was 8.
+steps took was 3
+
+this becomes 2^3 (Log 2 8 = 3).
+log sub2 of 8 is 3
+2 to the what power is equal to 8 (in this case 3).
+
+
+
+

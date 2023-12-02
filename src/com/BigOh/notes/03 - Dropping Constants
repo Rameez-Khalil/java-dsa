@@ -1,0 +1,6 @@
+In Big-Oh we have things available for us in order to simplify.
+Consider having two for loops both run n times.
+t
+
+Time Complexity: n+n=> 2n.
+We can drop the constants: O(N).
