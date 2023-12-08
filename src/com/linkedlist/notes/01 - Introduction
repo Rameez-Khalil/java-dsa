@@ -1,0 +1,6 @@
+Linked List are dynamic in length.
+Linked List vs Array List.
+Linked List will be containing head and tail, both of these are pointers.
+Each node will then point to the next node until we get to the end.
+
+LL is non-contagious, whereas ALs are contagious.

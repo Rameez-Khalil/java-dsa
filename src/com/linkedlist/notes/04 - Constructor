@@ -1,0 +1,14 @@
+APPROACH:
+    1. Since our helper method (Append, prepend, insert etc.) all of thse
+    are creating nodes, so we will create an inner class.
+    2. Since its a good practice to make class members private
+    where we can, so we will follow that rule of thumb.
+
+
+    ALGO:
+        1. Create a linked list class.
+        2. create LL class members (length, head and tail).
+        3. create an inner class (Node) along with the initializer.
+        4. Initialize LL with the help of constructor and set the
+        members appropriately.
+

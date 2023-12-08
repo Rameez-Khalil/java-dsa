@@ -1,0 +1,8 @@
+NODE:
+    Node is an object/hashmap.
+    A collection of data item and an index.
+
+
+Head and Tail both are pointers/nodes pointing to the first and last item
+in our list.
+

@@ -1,0 +1,19 @@
+Big OH for each method.
+
+
+ADDING:
+
+Adding at end - > O(1).
+Adding at beginning -> O(1).
+Adding at Nth O(N).
+
+REMOVING:
+Remove from start: O(1).
+Remove from end:  O(N).
+Remove from Nth: O(n/2)=> O(n).
+
+
+When it comes to AL vs LL.
+LL has upperhand at:
+    1. Adding at start.
+    2. Removing at start.
