@@ -1,0 +1,35 @@
+DP works on the basis of memoization.
+Each problem can be further divided into sub problems
+Divide until it cannot be further divided, in such a way that each problem can be solved independently.
+
+Since we do share some areas in our problems, we store the already solved area.
+This is known as overlapping sub-problems.
+
+
+DP - There is some area that overlaps.
+Divide and Conquer - The problems are independent.
+
+
+
+GREEDY APPROACH -
+    When we already know the path to acquire the solution.
+    We fix our path.
+--------------------------------------------------------------------------
+
+
+Consider 1,5,7 target sum is 18.
+
+
+GREEDY APPROACH.
+1st approach:
+7*2= 14.
+1*4 = 4.
+this will result 6 steps.
+
+2nd approach:
+
+7*1 = 7.
+5*2 = 10
+1*1 = 1.
+
+this will result 4 steps.
