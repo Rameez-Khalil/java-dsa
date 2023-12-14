@@ -120,4 +120,99 @@ public class LinkedList {
 
         return temp;
     }
+
+    //Get method.
+    public Node get(int index) {
+
+        //Assign temp to head.
+        //Traverse from 0 till the provided index.
+        //Return the Node.
+
+        if (index < 0 || index >= size) {
+            return null;
+        }
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    //Set Method.
+    public boolean set(int index, int value) {
+        Node temp = get(index);
+        if (temp != null) {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
+    //Insert method.
+    // Three things to be remembered:
+        /*
+            1. If the list is empty then prepend.
+            2. If the index is equivalent to the length then append.
+            3. if the provided index is outside of the scope.
+         */
+    public boolean insert(int index, int value) {
+        if (index < 0 || index > size) {
+            return false;
+        }
+        if (index == 0) {
+            prepend(value);
+            return true;
+        }
+        if (index == size) {
+            append(value);
+            return true;
+        }
+
+        Node newNode = new Node(value);
+        Node temp = get(index - 1);
+        newNode.next = temp.next;
+        temp.next = newNode;
+        size++;
+        return true;
+
+    }
+
+    public Node remove(int index){
+        if(index<0 || index>=size){
+            return null;
+        }
+        if(index==0){
+            return removeFirst();
+        }
+        if(index==size-1){
+            return removeLast();
+        }
+
+        Node prev = get(index-1);
+        Node temp = prev.next;
+
+        prev.next = temp.next;
+        temp.next = null;
+        size--;
+        return temp;
+
+    }
+
+    //Reverse.
+    public void reverse(){
+        Node temp = head;
+        head = tail;
+        tail = temp;
+
+        Node after = temp.next;
+        Node before = null;
+
+        for(int i=0;i<size;i++){
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
+    }
+
 }
