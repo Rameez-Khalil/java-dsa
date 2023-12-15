@@ -1,0 +1,6 @@
+A linear data structure that works on the basis of removing/adding
+from opposite ends.
+
+FOR LINKED LIST:
+    ADD AT END - O(1).
+    REMOVE AT START - O(1).
