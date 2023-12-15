@@ -1,0 +1,20 @@
+Stack is a linear data structure that works on the basis of LIFO.
+You cannot get to the 2nd item without passing by the 3rd.
+ADDING AND REMOVING SHOULD BE DONE FROM THE SAME END.
+
+EXAMPLES:
+    1.Web browser history.
+    2. Can be implemented with linked list / array list.
+
+
+FOR ARRAY LIST:
+    MAKE SURE TO ADD/REMOVE FROM END. O(1).
+
+FOR LINKED LIST:
+    ADD/REMOVE FROM BEGINNING O(1).
+    RemoveFirst will become pop.
+    Prepend will become push.
+    We don't need the bottom variable since we don't utilize
+    removing/adding from the bottom.
+
+
