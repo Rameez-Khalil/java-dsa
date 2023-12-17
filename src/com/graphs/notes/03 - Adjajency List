@@ -1,0 +1,10 @@
+A way to represent graph via hashmap/keyvalue.
+
+Assuming if A has a connection with B and E
+{
+    "A" =  ["B","E"],
+    "B" =  ["A","C"],
+    "C" =  ["D","B"],
+    "D" =  ["C","E"],
+    "E" =  ["A","D"]
+}

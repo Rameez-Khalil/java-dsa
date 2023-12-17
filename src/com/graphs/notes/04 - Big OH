@@ -1,0 +1,23 @@
+SPACE COMPLEX:
+    Adjacency Matrix: O(V^2) //vertex and the others as 0.
+    Adjacency List: O(V + E) //vertex and its edges.
+
+If we are to add another vertex then.
+
+    ADDING VERTEX:
+
+    Adjacency Matrix: we will need to add another row/col.
+    Adjacency List: Only a key value pair will be added.
+
+    ADDING EDGE:
+    For some reasons, both are O(1) when adding an EDGE.
+
+    REMOVING EDGE:
+    Adjacency Matrix: O(1).
+    Adjacency List: O(N). //since we will need to loop through the array.
+
+    REMOVING VERTEX:
+        Adjacency Matrix: O(V^2).
+        Adjacency List: O(V+E).
+        
+

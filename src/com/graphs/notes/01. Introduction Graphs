@@ -1,2 +1,13 @@
 In graphs we call node as a vertex.
 between vertices there is an edge/connection.
+There is no limit of how many vertices a vertex can be connected to.
+
+
+Steps:
+    Each step is known as hops.
+
+WAITED/NON WAITED:
+    1. You and the other party is following each other.
+    2. Only you are following the other party.
+
+    Tree is a form of a graph
