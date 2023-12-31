@@ -1,0 +1,9 @@
+Breadth First Search:
+    Start at the top.
+    Traverse each row from left to right.
+
+
+APPROACH:
+    Queue - Pointer will be stored.
+    Results - Dequeued results (Only value) will be stored here.
+

@@ -1,0 +1,5 @@
+TREE TRAVERSE
+    Visit every node in the tree.
+    Store these nodes inside an arraylist.
+
+

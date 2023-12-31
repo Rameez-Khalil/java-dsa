@@ -1,5 +1,9 @@
 package com.trees;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /*
   Binary tree can either have 0 or two nodes.
   Full - Either have 0 or two nodes.
@@ -82,4 +86,26 @@ public class BinaryTree {
 
         return false;
     }
+
+    //BFS
+    public ArrayList<Integer> BFS(){
+        Node currentNode = root;
+        Queue<Node> queue = new LinkedList<Node>();
+        ArrayList<Integer> results = new ArrayList<Integer>();
+        queue.add(currentNode);
+
+        while(!queue.isEmpty()){
+            currentNode = queue.remove();
+            results.add(currentNode.value);
+            if(currentNode.left!=null){
+                queue.add(currentNode.left);
+            }
+            if(currentNode.right!=null){
+                queue.add(currentNode.right);
+            }
+        }
+
+        return results;
+    }
+
 }

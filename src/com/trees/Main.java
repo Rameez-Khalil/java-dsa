@@ -1,5 +1,7 @@
 package com.trees;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         BinaryTree bs = new BinaryTree();
@@ -12,7 +14,8 @@ public class Main {
         bs.insert(27);
 
         //sout the value.
-        System.out.println(bs.contains(20));
+        System.out.println(bs.BFS());
+
 
     }
 }
