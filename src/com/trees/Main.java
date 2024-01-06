@@ -16,6 +16,8 @@ public class Main {
         //sout the value.
         System.out.println(bs.BFS());
         System.out.println(bs.preOrdder());
+        System.out.println(bs.postOrder());
+        System.out.println(bs.inOrder());
 
 
     }

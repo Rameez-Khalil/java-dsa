@@ -1,0 +1,5 @@
+POST ORDER:
+    Youngest children of each level must be written prior to its parent.
+    Look left && Look right? pick the node to be written.
+
+        ORDER: left node-> right node-> parent of left and right.

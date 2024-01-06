@@ -126,4 +126,44 @@ public class BinaryTree {
     }
 
 
+    //DFS - Post Order.
+    public List<Integer> postOrder() {
+        List<Integer> list = new ArrayList<>();
+        class Traverse {
+            Traverse(Node currentNode) {
+                if (currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+                list.add(currentNode.value);
+            }
+        }
+
+        new Traverse(root);
+        return list;
+    }
+
+    //DFS In Order.
+    public List<Integer> inOrder() {
+        ArrayList<Integer> results = new ArrayList<>();
+        class Traverse {
+            Traverse(Node currentNode) {
+                if (currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                results.add(currentNode.value);
+
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+            }
+        }
+        new Traverse(root);
+        return results;
+
+    }
+
+
 }
