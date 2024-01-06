@@ -1,7 +1,22 @@
 There are three types of DFS.
     1. PreOrder (start at the top, keep traverse left until the end).
+        Go to the end of the left hand side, once finish reach to the top then go right.
     2. PostOrder.
 
 
+DFS - PreOrder.
+
  Traverse until the end (left hand), once you've reached the bottom go to the parent,
  and then traverse the right.
+
+ PREORDER CODING APPROACH:
+    1. This is going to be a recursive solution.
+
+    2. Inner class will be used to perform certain sets of operations, mostly, left and right.
+    Since java doesn't allow a function to be written inside of another function so we will
+    treat new ConstructorName(parameter) as our callback function.
+
+    3. Every node will be put inside of our call stack to check left and right.
+        Once done with the left then it will move on to the right.
+
+

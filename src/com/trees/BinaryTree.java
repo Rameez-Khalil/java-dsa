@@ -1,9 +1,6 @@
 package com.trees;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /*
   Binary tree can either have 0 or two nodes.
@@ -107,6 +104,25 @@ public class BinaryTree {
         }
 
         return results;
+    }
+
+    //DFS - PreOrder.
+    public List<Integer> preOrdder() {
+        ArrayList<Integer> list = new ArrayList<>();
+        class Traverse {
+            Traverse(Node currentNode) {
+                list.add(currentNode.value);
+                if (currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+            }
+        }
+
+        new Traverse(root);
+        return list;
     }
 
 

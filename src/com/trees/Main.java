@@ -9,12 +9,13 @@ public class Main {
         bs.insert(21);
         bs.insert(76);
         bs.insert(18);
+        bs.insert(27);
         bs.insert(52);
         bs.insert(82);
-        bs.insert(27);
 
         //sout the value.
         System.out.println(bs.BFS());
+        System.out.println(bs.preOrdder());
 
 
     }
