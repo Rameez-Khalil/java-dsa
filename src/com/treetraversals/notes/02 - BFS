@@ -1,9 +1,17 @@
 Breadth First Search:
     Start at the top.
     Traverse each row from left to right.
+    Add these numbers into an array list.
+
+
 
 
 APPROACH:
+        Queue will store nodes.
+        Results will store node's value.
+
+        Store each node, and using this node go left then right.
+
     Queue - Pointer will be stored.
     Results - Dequeued results (Only value) will be stored here.
 

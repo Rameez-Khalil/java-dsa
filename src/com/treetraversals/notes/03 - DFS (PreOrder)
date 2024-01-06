@@ -1,0 +1,7 @@
+There are three types of DFS.
+    1. PreOrder (start at the top, keep traverse left until the end).
+    2. PostOrder.
+
+
+ Traverse until the end (left hand), once you've reached the bottom go to the parent,
+ and then traverse the right.

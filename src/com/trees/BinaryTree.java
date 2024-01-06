@@ -1,6 +1,7 @@
 package com.trees;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -75,10 +76,9 @@ public class BinaryTree {
                 temp = temp.left;
             }
             //check on right hand.
-            else if(value> temp.value){
+            else if (value > temp.value) {
                 temp = temp.right;
-            }
-            else{
+            } else {
                 return true;
             }
 
@@ -88,24 +88,26 @@ public class BinaryTree {
     }
 
     //BFS
-    public ArrayList<Integer> BFS(){
+    public ArrayList<Integer> BFS() {
         Node currentNode = root;
-        Queue<Node> queue = new LinkedList<Node>();
-        ArrayList<Integer> results = new ArrayList<Integer>();
+        Queue<Node> queue = new LinkedList<>();
+        ArrayList<Integer> results = new ArrayList<>();
         queue.add(currentNode);
 
-        while(!queue.isEmpty()){
-            currentNode = queue.remove();
-            results.add(currentNode.value);
-            if(currentNode.left!=null){
-                queue.add(currentNode.left);
+        //check to see after every attempt that the queue is valid.
+        while (!queue.isEmpty()) {
+            Node node = queue.remove();
+            results.add(node.value);
+            if (node.left != null) {
+                queue.add(node.left);
             }
-            if(currentNode.right!=null){
-                queue.add(currentNode.right);
+            if (node.right != null) {
+                queue.add(node.right);
             }
         }
 
         return results;
     }
+
 
 }
