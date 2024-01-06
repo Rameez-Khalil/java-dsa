@@ -1,0 +1,16 @@
+MERGE SORT:
+    Cut the array in half.
+    Repeat the above step until there is a single item array.
+    Pick two of these pieces and compare AND combine.
+    Pick a set of two sorted pieces then combine them.
+
+MERGE:
+    Merge is our helper function.
+    Two sorted arrays gets converted back into one sorted array.
+    Under each sorted array out of two:
+        1. Take two vars i and j.
+        2. Compare i with j, whichever is lower push that item
+            into combined array.
+        3. As soon as either i or j gets to 0 break out of the loop.
+        4. Push the remaining items from which ever had elements left.
+
