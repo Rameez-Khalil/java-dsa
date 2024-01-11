@@ -1,0 +1,7 @@
+MERGE SORT:
+    This function is responsible for cutting the array in half.
+    Break them half until/unless we left out with only single item.
+
+    1. Breaks array in half.
+    2. Base case - when array length is 1.
+    3. Use merge to put arrays together.

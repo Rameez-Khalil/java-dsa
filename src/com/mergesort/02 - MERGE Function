@@ -1,0 +1,4 @@
+MERGE FUNCTION:
+    A helper function which is responsible for concatinating the array.
+    We will initialize two indexes i and j, each belonging to 1st and 2nd array.
+    If either one of these get to 0 items, then we will get out of this loop.

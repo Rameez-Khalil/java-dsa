@@ -1,0 +1,5 @@
+MERGE SORT:
+    Pick the array.
+    Cut the array in half, until there is a single item array.
+    Take two of the cutted items and combine them.
+
