@@ -1,0 +1,16 @@
+QUICK SORT:
+    We will work on the basis of pivot point.
+    The first item will be considered as pivot.
+    After every iteration, everything left to the pivot will be sorted, and to the right will be unsorted.
+    After first iteration, run quicksort on the left hand side, and on the right hand side as well.
+
+PIVOT:
+    Helper function for quick sort.
+    Initialize pivot, swap to the first item, and i to the 2nd item.
+    Check the ith value, anytime when we have a smaller value than the pivot, we will move the swap var.
+        Swap those two items.
+
+QUICK SORT:
+    Call pivot.
+    Pivot will rearrange the indexes and will give us back the index.
+    This pivotIndex will then be used to apply quicksort on the left and right.
