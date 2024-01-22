@@ -31,6 +31,32 @@ public class ArrayQuestions {
         return index;
     }
 
+    /*
+        Remove the duplicates in place.
+        Initialize a temp index at 1.
+        Read every item from the array, and check if its not equal to the index before it. arr[i]!=arr[i-1}.
+            If true:
+                    arr[temp] = arr[i].
+                    temp++;
+
+        Return temp;
+     */
+
+    public static int removeDuplicates(int[] arr) {
+        if (arr.length == 0) {
+            return 0;
+        }
+        int index = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != arr[i - 1]) {
+                arr[index] = arr[i];
+                index++;
+            }
+        }
+
+        return index;
+    }
+
     //********************MAX AND MIN********************//
     /*
         Initialize the max and min at arr[0]
@@ -54,6 +80,61 @@ public class ArrayQuestions {
         }
 
         return new int[]{max, min};
+    }
+
+    //*******************LONGEST STRING******************//
+    /*
+        Initialize the first item as longest.
+        Loop through the entire array and perform swap if the currentItem's length is greater than what we have.
+        Return the string.
+     */
+
+    public static String longestString(String[] arr) {
+        if (arr.length == 0) {
+            return null;
+        }
+        String longest = arr[0];
+        for (String s : arr) {
+            if (!s.isEmpty() && s.length() > longest.length()) {
+                longest = s;
+            }
+        }
+
+        return longest;
+    }
+
+    //********************MAX PROFIT**********************//
+    public static int maxProfit(int[] arr){
+        if(arr.length==0){
+            return 0;
+        }
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for(int price: arr){
+           minPrice = Math.min(minPrice, price);
+           int currentProfit = price-minPrice;
+           maxProfit = Math.max(currentProfit, maxProfit);
+        }
+
+        return maxProfit;
+    }
+
+
+    //*******************MAX SUB ARRAY*******************//
+
+    public static int maxSubArray(int[] arr){
+        if(arr.length==0){
+            return 0;
+        }
+        int maxSubArr = arr[0];
+        int currentSum = arr[0];
+
+        for(int i=1;i<arr.length;i++){
+            currentSum = Math.max(arr[i], currentSum+arr[i]);
+            maxSubArr = Math.max(currentSum, maxSubArr);
+        }
+
+        return  maxSubArr;
     }
     //********************ROTATE**************************//
 
@@ -96,6 +177,7 @@ public class ArrayQuestions {
             end--;
         }
     }
+
 
     public static void efficientRotate(int[] arr, int k) {
         k = k % arr.length;
