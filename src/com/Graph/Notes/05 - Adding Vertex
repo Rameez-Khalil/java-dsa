@@ -1,0 +1,18 @@
+ADD VERTEX:
+    1. Create a hashmap that will store key as a string and the corresponding array list.
+        private HashMap<String, ArrayList<String>> adjacencyList = new HashMap();
+
+    2.  Create a method which will take a vertex as a string parameter.
+        Check to see if the provided vertex isn't in our hashmap.
+        If null then put our vertex as a key and generate its container for the vertices it is storing.
+
+
+        public boolean addVertex(String key){
+            if(adjacencyList.get(vertex)==null{
+                adjacencyList.put(vertex, new ArrayList<String>());
+                return true;
+            }
+
+            return false;
+        }
+

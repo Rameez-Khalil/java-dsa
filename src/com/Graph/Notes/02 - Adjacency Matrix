@@ -1,0 +1,8 @@
+Adjacency Matrix:
+    This is a way to represent a graph.
+    This works on the basis of 0 (no connection), 1 (connection) OR waited units if we are provided with that.
+    Vertical row represents the actual vertex.
+    Horizontal row represents the items our vertex has a connection with.
+    There will always be 45 degree line of zeros, and above/beyond this 45 degrees line we will have a mirror image,
+    only if the vertices are bi-directional.
+

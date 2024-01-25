@@ -1,0 +1,8 @@
+REMOVING EDGE:
+        Create a method named removeEdge accepting two string parameters.
+        Under the function body, check to see if two vertices exist.
+        Find the list for vertex1 and remove vertex2 occurrences from it.
+        Repeat the above process for vertex2.
+        Return true.
+
+        //If vertices weren't located then return false.

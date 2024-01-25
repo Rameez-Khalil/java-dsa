@@ -1,0 +1,21 @@
+VERTEX:
+    1. Vertex is equivalent to Node.
+    2. Between the vertices we have a connection/edge.
+    3. There is no limit to how many other vertices a vertex can be connected to.
+    4. HOP is a unit of traversing.
+    5. This is very helpful, suppose you want to go from A->B, the direct cost is 15 due to traffic and
+    the other way which is A->C->B has a cost of 5.
+
+
+EDGE:
+    Used to determine the connection between vertices.
+    Waited Edge is uni-directional (You are following a celebrity but they don't follow you back).
+    Non-Waited Ege is bidirectional (You and your friend are following you).
+
+
+
+TREE VS GRAPH VS LINKED LIST.
+    Trees are a form of graph, with a limitation that each node will point to max two other nodes.
+    LinkedList are used to implement Trees.
+    Hence, Trees are a form of graph, and linked list is a form of a tree, therefore,  LinkedList is also a form of a
+    graph.

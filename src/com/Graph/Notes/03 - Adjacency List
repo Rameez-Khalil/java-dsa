@@ -1,0 +1,6 @@
+ADJACENCY LIST:
+    Another way to represent a graph with the help of a Hash Map.
+    {
+        "KEY": ["VERTEX1", "VERTEX2"]
+        "A" : ["VERTEX1", "VERTEX2"]
+    }

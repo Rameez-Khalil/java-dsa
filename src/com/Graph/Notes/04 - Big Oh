@@ -1,0 +1,34 @@
+SPACE COMPLEXITY:
+
+    Adjacency List - We only store the connected nodes - O(V+E).
+    Adjacency Matrix - We store the connected nodes plus all the other non-connected nodes. (O(V^2)).
+
+    Suppose, we want to add a new vertex.
+    Adjacency List - We will only add this vertex as a key, and into an arraylist where this vertex will have a connection. O(1).
+    Adjacency Matrix - We will have to add another row, and another column to keep track - O(V^2).
+
+    ******************************************EDGE*******************************
+    ADDING EDGE:
+    Suppose, we want to add a new edge.
+    Adjacency list - This will be O(1).
+    Adjacency Matrix - This will be O(1).
+
+    REMOVING EDGE:
+    Adjacency List - Since, finding a key in a hashmap is O(1), but since we will need to traverse the entire array.
+                     this will become O(N).
+
+
+    Adjacency Matrix - We will just go to the index position in our grid and remove the edge hence O(1).
+
+    REMOVING VERTEX:
+        Adjacency Matrix - We will have to remove the row and col - O(N2).
+        Adjacency List - We will remove the key, also the references stored in each Vertex hence  - O(V+E).
+
+ADJACENCY MATRIX IS NOT PREFERRED.
+    Suppose you have a data set of Facebook with active billion users, how on earth you can manage that.
+    Incredibly inefficient.
+
+
+
+
+

@@ -1,0 +1,10 @@
+ADD EDGE:
+        1. Create a method addEdge which will accept two string parameters.
+            Inside the function, check to see that both of the provided vertices exist in our adjacency list using get method.
+            Simply chain the method of get along with add and pass vertex2 and vertex1.
+            return true.
+
+            return false if the above criteria doesn't fit.
+
+
+

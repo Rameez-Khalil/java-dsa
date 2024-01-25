@@ -1,0 +1,19 @@
+REMOVE VERTEX:
+        1. The beauty of bidirectional edges is just by looking at the vertex and its associated vertices,
+        we can identify how many edges to be removed.
+            e.g. D = [A,B,C]
+            we can clearly identify that D is associated with A, B and C. Also A, B, C has a connection pointing to D.
+
+        2. Create a function named removeVertex accepting a string parameter i.e. vertex.
+            Inside the body of the function check to see if our vertex exist in our list using get method.
+            Loop through the arrayList against our vertex and for every item present in it loop its arrayList and remove
+            the occurrence of the provided vertex.
+
+            public boolean removeVertex(String vertex){
+                if(adjacencyList.get(vertex)==null return false.
+                for(String connectedVertex : adjacencyList.get(vertex){
+                    adjacencyList.get(connectedVertex).remove(vertex);
+                }
+                adjacencyList.remove(vertex);
+                return true;
+            }
