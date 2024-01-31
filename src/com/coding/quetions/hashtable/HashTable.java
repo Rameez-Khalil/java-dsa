@@ -130,5 +130,67 @@ public class HashTable {
     }
 
     //SUB-ARRAY SUM.
+    public static int[] sumArraySum(int[] nums, int target) {
+        //Map to store the cumulative sum.
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        //To handle the edge case where our first element is equivalent to the target sum.
+        map.put(0, -1);
+
+        int currentSum = 0;
+        //Loop through the array, and store each item in a sumContainer to keep track of how far we are from the given sum.
+        for (int i = 0; i < nums.length; i++) {
+            currentSum += nums[i];
+            if (map.containsKey(currentSum - target)) {
+                return new int[]{map.get(currentSum - target) + 1, i};
+            }
+            map.put(currentSum, i);
+
+        }
+
+        return new int[]{};
+    }
+
+    //REMOVE DUPLICATES.
+    public static List<Integer> removeDuplicates(List<Integer> list) {
+        //Read every item and store it in a hashset.
+        //Return the hashset value through the list.
+        HashSet<Integer> set = new HashSet<>(list);
+        return new ArrayList<Integer>(set);
+
+    }
+
+    //UNIQUE CHARS.
+    public static boolean uniqueChars(String str) {
+
+        //Read every character and store it in a set.
+        HashSet<Character> unique = new HashSet<>();
+        for (char ch : str.toCharArray()) {
+            if (!unique.add(ch)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //PAIR FROM TWO INTS EQUAL TO TARGET.
+    public List<int[]> pair(int[] arr1, int[] arr2, int target) {
+        //Read arr1 and store it inside a hashset.
+        HashSet<Integer> hashSet = new HashSet<>();
+        for (int number : arr1) {
+            hashSet.add(number);
+        }
+
+        //Read every item from arr2, and try to locate target-currentNumber in the hashset.
+        //if found then add into our list and return the list.
+        ArrayList<int[]> pair = new ArrayList<>();
+        for (int number : arr2) {
+            if (hashSet.contains(target - number)) {
+                pair.add(new int[]{number, target - number});
+            }
+        }
+
+        return pair;
+    }
 
 }
