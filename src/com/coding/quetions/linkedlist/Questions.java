@@ -30,4 +30,27 @@ public class Questions {
 //        }
 //        return false;
 //    }
+
+    //KTH NODE FROM END.
+    public static Node kthNode(int k) {
+        Node fast = head;
+        Node slow = head;
+
+        //move fast k steps ahead of slow.
+        for (int i = 0; i < k; i++) {
+            if (fast == null) {
+                return null;
+            }
+
+            fast = fast.next;
+        }
+
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        return slow;
+    }
+
 }

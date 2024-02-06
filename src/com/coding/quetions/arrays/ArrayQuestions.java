@@ -104,7 +104,8 @@ public class ArrayQuestions {
     }
 
     //********************MAX PROFIT**********************//
-    public static int maxProfit(int[] arr){
+//    Let's consider an example with the array arr = [7, 1, 5, 3, 6, 4].
+        public static int maxProfit(int[] arr){
         if(arr.length==0){
             return 0;
         }
@@ -135,6 +136,23 @@ public class ArrayQuestions {
         }
 
         return  maxSubArr;
+    }
+
+    public static int rotateArr(int[] arr){
+        if(arr.length==0){
+            return 0;
+        }
+        int currentSum = arr[0];
+        int maxSubArr  = arr[0];
+
+        for(int i=1;i<arr.length;i++){
+            currentSum = Math.max(arr[i], arr[i]+currentSum);
+            maxSubArr = Math.max(currentSum,maxSubArr);
+        }
+
+        return maxSubArr;
+//        arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+
     }
     //********************ROTATE**************************//
 
