@@ -1,6 +1,9 @@
 package com.coding.quetions.heap;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class Heap {
@@ -33,25 +36,41 @@ public class Heap {
     }
 
 
-    public int kthLargestElement(int[] numbers, int k){
+    public int kthLargestElement(int[] numbers, int k) {
         //Read each element.
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
-        for(int number : numbers){
+        for (int number : numbers) {
             minHeap.offer(number);
 
             //maintain the size.
-            if(minHeap.size()>k){
+            if (minHeap.size() > k) {
                 minHeap.poll();
             }
 
 
         }
 
-        if(minHeap.peek()!=null){
+        if (minHeap.peek() != null) {
             return minHeap.peek();
         }
 
         return 0;
+    }
+
+    //LARGEST ELEMENT IN A STREAM.
+    public List<Integer> largestElementInStream(int[] numbers) {
+        //Read each element.
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int number : numbers) {
+            maxHeap.offer(number);
+            list.add(maxHeap.peek());
+
+        }
+
+        return list;
     }
 }
