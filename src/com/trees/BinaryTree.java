@@ -7,6 +7,8 @@ import java.util.*;
   Full - Either have 0 or two nodes.
   Perfect - All levels are filled.
   Complete - Insertion should start from left most.
+
+  BST - Maintains a property where left node is smaller than the right ones.
    */
 public class BinaryTree {
 
